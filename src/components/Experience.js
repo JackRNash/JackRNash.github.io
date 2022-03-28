@@ -14,49 +14,55 @@ class Experience extends Component {
         const technologies = work.technologies;
         const mainTechnologies = work.mainTech;
 
-        var mainTech = mainTechnologies.map((technology, i) => {
-          return (
-            <Badge pill className="main-badge mr-2 mb-2" key={i}>
-              {technology}
-            </Badge>
-          );
-        });
-        var tech = technologies.map((technology, i) => {
-          return (
-            <Badge pill className="experience-badge mr-2 mb-2" key={i}>
-              {technology}
-            </Badge>
-          );
-        });
+        // var mainTech = mainTechnologies.map((technology, i) => {
+        //   return (
+        //     <Badge pill className="main-badge mr-2 mb-2" key={i}>
+        //       {technology}
+        //     </Badge>
+        //   );
+        // });
+        // var tech = technologies.map((technology, i) => {
+        //   return (
+        //     <Badge pill className="experience-badge mr-2 mb-2" key={i}>
+        //       {technology}
+        //     </Badge>
+        //   );
+        // });
         return (
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date={work.years}
             iconStyle={{
-              background: "#AE944F",
+              background: "#4795df",
               color: "#fff",
               textAlign: "center",
             }}
             icon={<i className="fab fa-angular experience-icon"></i>}
             key={i}
           >
-            <div style={{ textAlign: "left", marginBottom: "4px" }}>
+            {/* <div style={{ textAlign: "left", marginBottom: "4px" }}>
               {mainTech}
-            </div>
+            </div> */}
 
             <h3
               className="vertical-timeline-element-title"
-              style={{ textAlign: "left" }}
+              style={{ textAlign: "left", fontWeight: "bold" }}
             >
-              {work.title}
+              {work.company}
             </h3>
             <h4
               className="vertical-timeline-element-subtitle"
               style={{ textAlign: "left" }}
             >
-              {work.company}
+              {work.title}
             </h4>
-            <div style={{ textAlign: "left", marginTop: "15px" }}>{tech}</div>
+            <h4
+              className="vertical-timeline-element-subtitle"
+              style={{ textAlign: "left", marginTop: "10px" }}
+            >
+              {work.description}
+            </h4>
+            {/* <div style={{ textAlign: "left", marginTop: "15px" }}>{tech}</div> */}
           </VerticalTimelineElement>
         );
       });
@@ -78,7 +84,7 @@ class Experience extends Component {
             {work}
             <VerticalTimelineElement
               iconStyle={{
-                background: "#AE944F",
+                background: "#4795df",
                 color: "#fff",
                 textAlign: "center",
               }}

@@ -1,4 +1,8 @@
 import React, { Component } from "react";
+import { Icon } from "@iconify/react";
+import emailIcon from "@iconify/icons-carbon/email";
+import linkedInIcon from "@iconify/icons-carbon/logo-linkedin";
+import githubIcon from "@iconify/icons-carbon/logo-github";
 import Typical from "react-typical";
 import Switch from "react-switch";
 
@@ -27,30 +31,76 @@ class Header extends Component {
   render() {
     if (this.props.sharedData) {
       var name = this.props.sharedData.name;
-      this.titles = this.props.sharedData.titles.map(x => [ x.toUpperCase(), 1500 ] ).flat();
+      this.titles = this.props.sharedData.titles.map(x => [x.toUpperCase(), 1500]).flat();
     }
 
-    const HeaderTitleTypeAnimation = React.memo( () => {
+    const HeaderTitleTypeAnimation = React.memo(() => {
       return <Typical className="title-styles" steps={this.titles} loop={50} />
     }, (props, prevProp) => true);
 
     return (
-      <header id="home" style={{ height: window.innerHeight - 140, display: 'block' }}>
-        <div className="row aligner" style={{height: '100%'}}>
+      <header id="home" style={{ height: window.innerHeight, display: 'block' }}>
+        <div className="row aligner" style={{ height: '100%' }}>
           <div className="col-md-12">
             <div>
-              <span className="iconify header-icon" data-icon="la:laptop-code" data-inline="false"></span>
-              <br/>
+              <div className="polaroid">
+                <span style={{ cursor: "auto" }}>
+                  <img
+                    height="250px"
+                    src={"images/myProfile.jpg"}
+                    alt="Picture of me"
+                  />
+                </span>
+              </div>
+              <br />
               <h1 className="mb-0">
                 <Typical steps={[name]} wrapper="p" />
               </h1>
               <div className="title-container">
                 <HeaderTitleTypeAnimation />
               </div>
+              <div className="row center mx-auto mb-5">
+                <div className="col-md-4 mb-5 center">
+                  {/* <span className="m-4"> */}
+                  <a href={'https://github.com/JackRNash'}
+                    target="_blank" rel="noopener noreferrer"
+                    style={{ fontSize: "400%", margin: "0% 5% 0% 5%", color: "black" }}
+                  >
+                    <Icon
+                      icon={githubIcon}
+                    />
+                  </a>
+                  {/* </span> */}
+                  <a href={'mailto:JackNashCA@gmail.com'}
+                    target="_blank" rel="noopener noreferrer"
+                    style={{ fontSize: "400%", margin: "0% 5% 0% 5%", color: "black" }}
+                  >
+                    <Icon
+                      icon={emailIcon}
+                    />
+                  </a>
+                  {/* <Icon
+                    icon={emailIcon}
+                    style={{ fontSize: "400%", margin: "0% 5% 0% 5%" }}
+                  /> */}
+                  <a href={'https://www.linkedin.com/in/jack-nash-282765146/'}
+                    target="_blank" rel="noopener noreferrer"
+                    style={{ fontSize: "400%", margin: "0% 5% 0% 5%", color: "black" }}
+                  >
+                    <Icon
+                      icon={linkedInIcon}
+                    />
+                  </a>
+                  {/* <Icon
+                    icon={linkedInIcon}
+                    style={{ fontSize: "400%", margin: "0% 5% 0% 5%" }}
+                  /> */}
+                </div>
+              </div>
               <Switch
                 checked={this.state.checked}
                 onChange={this.onThemeSwitchChange}
-                offColor="#baaa80"
+                offColor="#a9d4fc"
                 onColor="#353535"
                 className="react-switch mx-auto"
                 width={90}
@@ -58,7 +108,6 @@ class Header extends Component {
                 uncheckedIcon={
                   <span
                     className="iconify"
-                    data-icon="twemoji:owl"
                     data-inline="false"
                     style={{
                       display: "block",
@@ -73,7 +122,6 @@ class Header extends Component {
                 checkedIcon={
                   <span
                     className="iconify"
-                    data-icon="noto-v1:sun-with-face"
                     data-inline="false"
                     style={{
                       display: "block",
@@ -87,6 +135,7 @@ class Header extends Component {
                 }
                 id="icon-switch"
               />
+
             </div>
           </div>
         </div>

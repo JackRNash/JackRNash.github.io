@@ -3,15 +3,15 @@
       "description_header": "Hi",
       "description": "👋 I'm Davina Griss. Fictional person for preview purposes :) I'm working with newest front-end frameworks like Angular, React and Vue. What you are seeing now is portfolio template from Dorota1997. If you like this portfolio template, make sure to ⭐ the repository to make it more recognizable for other users. Thank you 💜",
       "section_name": {
-        "about": "About me",
-        "projects": "Projects",
+        "about": "Projects",
+        "projects": "Hobbies",
         "skills": "Skills",
         "experience": "Experience"
       }
     },
     "projects": [
       {
-        "title": "Animal Shelter",
+        "title": "Comedy",
         "startDate": "2020",
         "description": "The most expanded application I had opportunity to work with. I've learned many technologies and my code was reviewed by awesome curator. Application handles all adoption processess and allows to store all evidence on adopting animals from animal shelter.",
         "images": [
@@ -35,7 +35,7 @@
         ]
       },
       {
-        "title": "Photography",
+        "title": "Running",
         "startDate": "2018",
         "description": "Personal project for study subject. I was responsible for testing photography application that optimizes images with popular algorithms used by graphic editors like Pixlr or Adobe Photoshop. I've earned A grade :)",
         "images": [
@@ -55,7 +55,7 @@
         ]
       },
       {
-        "title": "3D Object Viewer",
+        "title": "Reading",
         "startDate": "2015",
         "description": "One of the first apps I was working on my internship. I had to develop front-end implementation for app that shows 3D models of known buildings. This was also my first project in Angular framework. I've learned a lot!",
         "images": [
@@ -81,23 +81,12 @@
     ],
     "experience": [
       {
-        "company": "DefOpenSource",
+        "company": "MongoDB",
         "title": "Front-End Developer",
+        "description": "I worked here sdkfljasldk",
         "years": "10.2019 - present",
-        "mainTech": [
-          "Angular 8/9/10"
-        ],
-        "technologies": [
-          "REST API",
-          "RxJS",
-          "JavaScript",
-          "Bootstrap",
-          "MDBootstrap",
-          "EF Core",
-          ".NET Core",
-          "SignalR",
-          "Angular Material"
-        ]
+        "mainTech": [],
+        "technologies": []
       },
       {
         "company": "Serros Solutions",

@@ -14,9 +14,12 @@ $control-button-hover-opacity: 0.75;
 $control-button-background: transparent;
 $loader-bar-color:#BFAA76;
 $loader-bar-height: 6px;
-$control-bullet-color: #D7CAAA;
-$control-bullet-active-color: #D7CAAA;
-$content-background-color: #D7CAAA;
+// $control-bullet-color: #D7CAAA;
+$control-bullet-color: #e4630d;
+// $control-bullet-active-color: #D7CAAA;
+$control-bullet-active-color: #287ece;
+// $content-background-color: #D7CAAA;
+$content-background-color: #287ece;
 
 %fill-parent {
   display: block;
