@@ -10,6 +10,11 @@ body[data-theme="dark"] {
       color: white;
    }
 
+   
+   .headerIcons {
+      color: #8C8C8C
+   }
+
    .header-icon {
       color: #3C342C;
       opacity: 0.8;
@@ -68,7 +73,8 @@ body[data-theme="dark"] {
 
    #resume {
       filter: brightness(80%);
-      background: #5b5b5b;
+      // background: #5b5b5b;
+      background: #7f7f7f;
       .section-title {
          color: white !important;
       }

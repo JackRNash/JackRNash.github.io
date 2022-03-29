@@ -49,6 +49,9 @@ class Experience extends Component {
             }}
             icon={iconLookup[work.icon]}
             key={i}
+            // contentStyle={{
+            //   background: "#a9d4fc"
+            // }}
           >
             {/* <div style={{ textAlign: "left", marginBottom: "4px" }}>
               {mainTech}

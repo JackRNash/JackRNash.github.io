@@ -68,6 +68,7 @@ class Header extends Component {
                   >
                     <Icon
                       icon={githubIcon}
+                      className="headerIcons"
                     />
                   </a>
                   {/* </span> */}
@@ -77,6 +78,7 @@ class Header extends Component {
                   >
                     <Icon
                       icon={emailIcon}
+                      className="headerIcons"
                     />
                   </a>
                   {/* <Icon
@@ -89,6 +91,7 @@ class Header extends Component {
                   >
                     <Icon
                       icon={linkedInIcon}
+                      className="headerIcons"
                     />
                   </a>
                   {/* <Icon
