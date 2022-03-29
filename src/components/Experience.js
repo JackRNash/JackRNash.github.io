@@ -5,6 +5,9 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import Badge from "react-bootstrap/Badge";
+import { Icon } from '@iconify/react';
+import mongoIcon from '@iconify/icons-cib/mongodb';
+import shareThisIcon from '@iconify/icons-ps/sharethis';
 
 class Experience extends Component {
   render() {
@@ -14,20 +17,27 @@ class Experience extends Component {
         const technologies = work.technologies;
         const mainTechnologies = work.mainTech;
 
-        // var mainTech = mainTechnologies.map((technology, i) => {
-        //   return (
-        //     <Badge pill className="main-badge mr-2 mb-2" key={i}>
-        //       {technology}
-        //     </Badge>
-        //   );
-        // });
-        // var tech = technologies.map((technology, i) => {
-        //   return (
-        //     <Badge pill className="experience-badge mr-2 mb-2" key={i}>
-        //       {technology}
-        //     </Badge>
-        //   );
-        // });
+        var mainTech = mainTechnologies.map((technology, i) => {
+          return (
+            <Badge pill className="main-badge mr-2 mb-2" key={i}>
+              {technology}
+            </Badge>
+          );
+        });
+        var tech = technologies.map((technology, i) => {
+          return (
+            <Badge pill className="experience-badge mr-2 mb-2" key={i}>
+              {technology}
+            </Badge>
+          );
+        });
+        var iconLookup = {
+          "mongo": <Icon icon={mongoIcon} class="experience-icon" />,
+          "sharethis": <Icon icon={shareThisIcon}  class="experience-icon" />,
+          "cornell": <i class="fa fa-university experience-icon" aria-hidden="true"></i>
+        };
+        var desc = work.description.map((item,i) => <li key={i}>{item}</li>);
+      
         return (
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
@@ -37,7 +47,7 @@ class Experience extends Component {
               color: "#fff",
               textAlign: "center",
             }}
-            icon={<i className="fab fa-angular experience-icon"></i>}
+            icon={iconLookup[work.icon]}
             key={i}
           >
             {/* <div style={{ textAlign: "left", marginBottom: "4px" }}>
@@ -58,11 +68,11 @@ class Experience extends Component {
             </h4>
             <h4
               className="vertical-timeline-element-subtitle"
-              style={{ textAlign: "left", marginTop: "10px" }}
+              style={{ textAlign: "left", marginTop: "10px", marginLeft: "14px" }}
             >
-              {work.description}
+              {desc}
             </h4>
-            {/* <div style={{ textAlign: "left", marginTop: "15px" }}>{tech}</div> */}
+            <div style={{ textAlign: "left", marginTop: "15px" }}>{tech}</div>
           </VerticalTimelineElement>
         );
       });

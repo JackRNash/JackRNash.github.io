@@ -1,8 +1,4 @@
 import React, { Component } from "react";
-import { Icon } from "@iconify/react";
-import angularIcon from "@iconify/icons-logos/angular-icon";
-import reactIcon from "@iconify/icons-logos/react";
-import vueIcon from "@iconify/icons-logos/vue";
 
 class About extends Component {
   render() {
@@ -13,6 +9,76 @@ class About extends Component {
       var sectionName = this.props.resumeBasicInfo.section_name.about;
       var hello = this.props.resumeBasicInfo.description_header;
       var about = this.props.resumeBasicInfo.description;
+
+      var projects = this.props.resumeProjects.map(function (projects) {
+        return (
+          <div className="card" style={{ margin: "2% 0% 2% 0%" }}>
+            <div className="card-header">
+              <span
+                className="iconify"
+                data-icon="emojione:red-circle"
+                data-inline="false"
+              ></span>{" "}
+                    &nbsp;{" "}
+              <span
+                className="iconify"
+                data-icon="twemoji:yellow-circle"
+                data-inline="false"
+              ></span>{" "}
+                    &nbsp;{" "}
+              <span
+                className="iconify"
+                data-icon="twemoji:green-circle"
+                data-inline="false"
+              ></span>
+            </div>
+            <div
+              className="card-body font-trebuchet ml-3 mr-3"
+              style={{
+                height: "auto",
+                fontSize: "132%",
+                lineHeight: "200%",
+              }}
+            >
+              <br />
+              <span className="wave">
+                {projects.title}
+                {projects.url ? (
+                  <a
+                    href={projects.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="link-href"
+                  >
+                    <span class="iconify" data-icon="carbon:logo-github" style={{ marginLeft: "10px"}}></span>
+                    {/* <i
+                      class="fa-brands fa-github"
+                      style={{ marginLeft: "10px" }}
+                    ></i> */}
+                  </a>
+                ) : null}
+              </span>
+              <br />
+              <br />
+              <div class="row md-3">
+                <div class="col" style={{lineHeight: "110%"}}>
+                  {projects.description}
+                </div>
+                {/* <br /> */}
+                <div class="col-4">
+                  <img
+                    src={projects.images[0]}
+                    class="img-fluid"
+                    alt="projectImages"
+                    height="230"
+                    style={{ marginBottom: 0, paddingBottom: 0, position: 'relative' }}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        );
+      });
     }
 
     return (
@@ -48,78 +114,7 @@ class About extends Component {
 
             <div className="col-md-8 center">
               <div className="col-md-10">
-                <div className="card">
-                  <div className="card-header">
-                    <span
-                      className="iconify"
-                      data-icon="emojione:red-circle"
-                      data-inline="false"
-                    ></span>{" "}
-                    &nbsp;{" "}
-                    <span
-                      className="iconify"
-                      data-icon="twemoji:yellow-circle"
-                      data-inline="false"
-                    ></span>{" "}
-                    &nbsp;{" "}
-                    <span
-                      className="iconify"
-                      data-icon="twemoji:green-circle"
-                      data-inline="false"
-                    ></span>
-                  </div>
-                  <div
-                    className="card-body font-trebuchet text-justify ml-3 mr-3"
-                    style={{
-                      height: "auto",
-                      fontSize: "132%",
-                      lineHeight: "200%",
-                    }}
-                  >
-                    <br />
-                    <span className="wave">{hello} :) </span>
-                    <br />
-                    <br />
-                    {about}
-                  </div>
-                </div>
-                
-                <div className="card">
-                  <div className="card-header">
-                    <span
-                      className="iconify"
-                      data-icon="emojione:red-circle"
-                      data-inline="false"
-                    ></span>{" "}
-                    &nbsp;{" "}
-                    <span
-                      className="iconify"
-                      data-icon="twemoji:yellow-circle"
-                      data-inline="false"
-                    ></span>{" "}
-                    &nbsp;{" "}
-                    <span
-                      className="iconify"
-                      data-icon="twemoji:green-circle"
-                      data-inline="false"
-                    ></span>
-                  </div>
-                  <div
-                    className="card-body font-trebuchet text-justify ml-3 mr-3"
-                    style={{
-                      height: "auto",
-                      fontSize: "132%",
-                      lineHeight: "200%",
-                    }}
-                  >
-                    <br />
-                    <span className="wave">{hello} :) </span>
-                    <br />
-                    <br />
-                    {about}
-                  </div>
-                </div>
-
+                {projects}
               </div>
             </div>
           </div>
