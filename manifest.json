@@ -1,0 +1,9 @@
+{
+  "short_name": "Jack's Site",
+  "name": "Jack's Website",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

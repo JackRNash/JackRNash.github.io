@@ -1,0 +1,118 @@
+{
+    "basic_info": {
+      "description_header": "Project 1",
+      "description": "👋 I'm Davina Griss. Fictional person for preview purposes :) I'm working with newest front-end frameworks like Angular, React and Vue. What you are seeing now is portfolio template from Dorota1997. If you like this portfolio template, make sure to ⭐ the repository to make it more recognizable for other users. Thank you 💜",
+      "section_name": {
+        "about": "Projects",
+        "projects": "Hobbies",
+        "skills": "Skills",
+        "experience": "Experience"
+      }
+    },
+    "projects": [
+      {
+        "title": "QR Code Generator",
+        "description": "Built program in Java from scratch to encode alphanumeric messages of scalable complexity along with error correction and alignment symbols to account for scanner orientation.",
+        "images": [
+          "images/portfolio/projects/qr.png"
+        ],
+        "url": "https://github.com/JackRNash/QR-Code-Generator"
+      },
+      {
+        "title": "Compiler",
+        "description": "Created as a team of 3 a compiler in Java for a small language with multidimensional arrays, recursion, and a type system. The compiler lexed, parsed, type checked, optimized, and output assembly which was then linked by the GNU linker",
+        "images": [],
+        "url": ""
+      },
+      {
+        "title": "Fast Neural Style Transfer",
+        "description": "Implemented current research on training a neural network to quickly render images and GIFs in the style of different images, such as those of famous artists.",
+        "images": [
+          "images/portfolio/projects/style-transfer.png"
+        ],
+        "url": "https://github.com/JackRNash/Neural-Style-Transfer"
+      }
+    ],
+    "hobbies": [
+      {
+        "title": "Comedy",
+        "description": "In college, I joined an improv comedy group. We perform several shows a semester, showing up with no material prepared and generating it all on the spot off of suggestions from the audience.",
+        "images": [
+          "images/portfolio/comedy/p1.jpg"
+        ],
+        "url": "",
+        "technologies": []
+      },
+      {
+        "title": "Running",
+        "description": "I ran cross country and track in high school all four years and still love to run.",
+        "images": [
+          "images/portfolio/running/p1.jpg"
+        ],
+        "url": "",
+        "technologies": []
+      },
+      {
+        "title": "Reading",
+        "description": "I like to read, especially on the Kindle. Although I enjoy nonfiction, these days I mainly read sci-fi and fantasy stories. Some books/ series I enjoy are Dune, Project Hail Mary, and the Cradle series by Will Wight.",
+        "images": [
+          "images/portfolio/reading/p1.jpg"
+        ],
+        "url": "",
+        "technologies": []
+      }
+    ],
+    "experience": [
+      {
+        "company": "MongoDB",
+        "title": "Software Engineer Intern",
+        "description": [
+          "Designed and built a command line interface tool allowing natural text search queries to be run locally over individual files. Prior, queries were limited to cloud databases and this tool was the team’s most requested feature.",
+          "Developed infrastructure for a tool to give live feedback when defining how to split text into tokens."
+        ],
+        "years": "June 2021 - August 2021",
+        "icon": "mongo",
+        "mainTech": [],
+        "technologies": [
+          "Java",
+          "Linux",
+          "MongoDB"
+        ]
+      },
+      {
+        "company": "ShareThis",
+        "title": "Software Engineer Intern",
+        "description": [
+          "Improved traditional methods to create higher-quality customer segments by using machine learning to generate embeddings for websites and users.",
+          "Built a Python program to classify sites more effectively and accurately using previously generated website embeddings.",
+          "Optimized performance to speed up embedding generation time by 300% as well as reduce storage size by 73%."
+        ],
+        "years": "June 2020 - August 2020",
+        "icon": "sharethis",
+        "mainTech": [],
+        "technologies": [
+          "Python",
+          "Machine Learning"
+        ]
+      },
+      {
+        "company": "Cornell University",
+        "title": "Bachelor of Science in Computer Science, Minor in Math",
+        "description": [
+          "As a TA for two courses (functional programming & large scale machine learning), held regular office hours twice a week to teach students concepts and help with assignments.",
+          "Assisted in a research lab studying datacenter communication protocols. Previous work studied the optimization of large-scale machine learning systems and proving a parallelization strategy’s efficiency given an optimization algorithm."
+        ],
+        "years": "August 2018 - May 2022",
+        "icon": "cornell",
+        "mainTech": [],
+        "technologies": [
+          "Java",
+          "Python",
+          "C++",
+          "OCaml",
+          "Bash",
+          "Linux"
+        ]
+      }
+    ]
+  }
