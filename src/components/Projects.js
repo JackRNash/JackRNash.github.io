@@ -32,6 +32,7 @@ class Projects extends Component {
                     src={hobbies.images[0]}
                     alt="projectImages"
                     height="230"
+                    className="img-responsive"
                     style={{marginBottom: 0, paddingBottom: 0, position: 'relative'}}
                   />
                   <br />

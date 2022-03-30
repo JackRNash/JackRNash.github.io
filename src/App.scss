@@ -31,8 +31,8 @@ html {
 
 header {
 	position: relative;
-	height: 520px;
-	min-height: 450px;
+	// height: 620px;
+	min-height: 100px;
 	width: 100%;
 	background-size: cover;
 	-webkit-background-size: cover;
@@ -67,13 +67,6 @@ header {
 	border-radius: 8px;
 }
 
-// .language {
-// 	font-size: 25px;
-// 	background-color: #e9d5a1;
-// 	padding-bottom: 10px;
-// 	padding-top: 80px;
-// }
-
 header h1 {
 	font-size: 400%;
 	text-align: center;
@@ -95,11 +88,16 @@ header h1 {
 .slider-tab {
 	background-color: #D7CAAA;
 	height: 25px;
+	order: -100;
 }
 
 .slider-iconfiy {
 	margin-top: 10px;
 }
+
+.slider-contain > .awssld > .awssld__wrapper > .awssld__container > .awssld__box > .awssld__content > img {
+	object-fit: contain;
+  }
 
 .styles_typicalWrapper__1_Uvh::after {
 	cursor: none !important;
@@ -113,6 +111,7 @@ header h1 {
 
 #about h1 {
 	padding-top: 5%;
+	padding-bottom: 5%;
 	font: 18px/24px 'opensans-bold', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 3px;
@@ -147,7 +146,7 @@ header h1 {
 	font-size: 25px;
 	content: attr(title);
 	position: relative;
-	top: 15px;
+	// top: 0px;
 }
 
 .foto div:hover {
@@ -177,7 +176,7 @@ header h1 {
 .polaroid span {
 	background: #ffffff;
 	display: inline-block;
-	margin: 55px 75px 30px;
+	margin: 0 75px 30px;
 	padding: 15px 15px 30px;
 	text-align: center;
 	text-decoration: none;
@@ -263,7 +262,7 @@ header h1 {
 }
 
 .modal-inside .modal-content {
-	background: white;
+	background: #ebeaf5;
 }
 
 .bars {

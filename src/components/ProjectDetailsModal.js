@@ -30,7 +30,7 @@ class ProjectDetailsModal extends Component {
         });
         if (this.props.data.images) {
           var img = images.map((elem, i) => {
-            return <div key={i} data-src={elem} />;
+            return <div key={i} data-src={elem} style={{width: "100%"}} />;
           });
         }
       }
@@ -68,6 +68,7 @@ class ProjectDetailsModal extends Component {
                 data-inline="false"
               ></span>
             </div>
+            <div className="slider-contain">
             <AwesomeSlider
               cssModule={[AwesomeSliderStyles, AwesomeSliderStyles2]}
               animation="scaleOutAnimation"
@@ -75,6 +76,7 @@ class ProjectDetailsModal extends Component {
             >
               {img}
             </AwesomeSlider>
+            </div>
           </div>
           <div className="col-md-10 mx-auto">
             <h3 style={{ padding: "5px 5px 0 5px" }}>

@@ -19,13 +19,13 @@ class About extends Component {
                 data-icon="emojione:red-circle"
                 data-inline="false"
               ></span>{" "}
-                    &nbsp;{" "}
+              &nbsp;{" "}
               <span
                 className="iconify"
                 data-icon="twemoji:yellow-circle"
                 data-inline="false"
               ></span>{" "}
-                    &nbsp;{" "}
+              &nbsp;{" "}
               <span
                 className="iconify"
                 data-icon="twemoji:green-circle"
@@ -50,30 +50,28 @@ class About extends Component {
                     rel="noopener noreferrer"
                     className="link-href"
                   >
-                    <span class="iconify" data-icon="carbon:logo-github" style={{ marginLeft: "10px"}}></span>
-                    {/* <i
-                      class="fa-brands fa-github"
-                      style={{ marginLeft: "10px" }}
-                    ></i> */}
+                    <span class="iconify" data-icon="carbon:logo-github" style={{ marginLeft: "10px" }}></span>
                   </a>
                 ) : null}
               </span>
               <br />
               <br />
               <div class="row md-3">
-                <div class="col" style={{lineHeight: "110%"}}>
+                <div class="col-md-8" style={{ lineHeight: "110%" }}>
                   {projects.description}
                 </div>
                 {/* <br /> */}
-                <div class="col-4">
+              <div class="col-md-4 justify-content-center">
+                {projects.images.length > 0 ? ( 
                   <img
                     src={projects.images[0]}
                     class="img-fluid"
-                    alt="projectImages"
-                    height="230"
-                    style={{ marginBottom: 0, paddingBottom: 0, position: 'relative' }}
-                  />
-                </div>
+                    alt="Image of project"
+                    style={{ marginBottom: 0, paddingBottom: 0, position: 'relative', maxHeight: "200px" }}
+                  />)
+                  : null
+                }
+              </div>
               </div>
             </div>
           </div>

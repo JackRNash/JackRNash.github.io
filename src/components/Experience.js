@@ -32,9 +32,9 @@ class Experience extends Component {
           );
         });
         var iconLookup = {
-          "mongo": <Icon icon={mongoIcon} class="experience-icon" />,
-          "sharethis": <Icon icon={shareThisIcon}  class="experience-icon" />,
-          "cornell": <i class="fa fa-university experience-icon" aria-hidden="true"></i>
+          "mongo": <Icon icon={mongoIcon} className="experience-icon" />,
+          "sharethis": <Icon icon={shareThisIcon}  className="experience-icon" />,
+          "cornell": <i className="fa fa-university experience-icon" aria-hidden="true"></i>
         };
         var desc = work.description.map((item,i) => <li key={i}>{item}</li>);
       
