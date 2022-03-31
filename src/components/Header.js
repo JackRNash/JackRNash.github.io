@@ -39,7 +39,7 @@ class Header extends Component {
     }, (props, prevProp) => true);
 
     return (
-      <header id="home" style={{ height: window.innerHeight, display: 'block' }}>
+      <header id="home" style={{ height: Math.max(window.innerHeight, 800), display: 'block' }}>
         <div className="row aligner" style={{  }}>
           <div className="col-md-12">
             <div>
