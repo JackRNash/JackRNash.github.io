@@ -41,28 +41,42 @@ class About extends Component {
               }}
             >
               <br />
-              <span className="wave">
-                {projects.title}
-                {projects.url ? (
-                  <a
-                    href={projects.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="link-href"
-                  >
-                    <span class="iconify" data-icon="carbon:logo-github" style={{ marginLeft: "10px" }}></span>
-                  </a>
-                ) : null}
-              </span>
-              <br />
-              <br />
-              <div class="row md-3">
-                <div class="col-md-8" style={{ lineHeight: "110%" }}>
-                  {projects.description}
+              <div className="row">
+                <div className="col-md-9">
+                  <span className="wave">
+                    {projects.title}
+                    {projects.url ? (
+                      <a
+                        href={projects.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="link-href"
+                      >
+                        <span class="iconify" data-icon="carbon:logo-github" style={{ marginLeft: "10px" }}></span>
+                      </a>
+                    ) : null}
+                  </span>
+                  <br />
+                  <br />
+                  {/* <div class="row md-3"> */}
+                  <div class="col" style={{ lineHeight: "110%" }}>
+                    {projects.description}
+                  </div>
                 </div>
                 {/* <br /> */}
-              <div class="col-md-4 justify-content-center">
-                {projects.images.length > 0 ? ( 
+                <div class="col-md justify-content-center center">
+                  {/* {projects.images.map(img =>
+                    <div>
+                      <img
+                        src={img}
+                        class="img-fluid"
+                        alt="Image of project"
+                        style={{ marginBottom: 0, paddingBottom: 0, position: 'relative', maxHeight: "2000px" }}
+                      />
+                    </div>
+                  )
+                  } */}
+                  {projects.images.length > 0 ? ( 
                   <img
                     src={projects.images[0]}
                     class="img-fluid"
@@ -71,8 +85,22 @@ class About extends Component {
                   />)
                   : null
                 }
+                </div>
               </div>
+              <div className="row center">
+                {projects.images.slice(1).map(img =>
+                  <div>
+                    <img
+                      src={img}
+                      class="img-fluid"
+                      alt="Image of project"
+                      style={{ marginBottom: 0, paddingBottom: 0, position: 'relative', maxHeight: "300px" }}
+                    />
+                  </div>
+                )
+                }
               </div>
+              {/* </div> */}
             </div>
           </div>
         );
