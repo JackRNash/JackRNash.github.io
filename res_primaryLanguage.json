@@ -28,6 +28,7 @@
         "title": "Fast Neural Style Transfer",
         "description": "Implemented current research on training a neural network to quickly render images and GIFs in the style of different images, such as those of famous artists.",
         "images": [
+          "images/portfolio/projects/sky_stylized_starry_night.gif",
           "images/portfolio/projects/style-transfer.png"
         ],
         "url": "https://github.com/JackRNash/Neural-Style-Transfer"
