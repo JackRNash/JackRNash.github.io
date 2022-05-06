@@ -81,7 +81,7 @@ class About extends Component {
                     src={projects.images[0]}
                     class="img-fluid"
                     alt="Image of project"
-                    style={{ marginBottom: 0, paddingBottom: 0, position: 'relative', maxHeight: "200px" }}
+                    style={{ margin: 5, paddingBottom: 0, position: 'relative', maxHeight: "200px" }}
                   />)
                   : null
                 }
