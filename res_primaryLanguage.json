@@ -55,9 +55,12 @@
       },
       {
         "title": "Reading",
-        "description": "I like to read, especially on the Kindle. Although I enjoy nonfiction, these days I mainly read sci-fi and fantasy stories. Some books/ series I enjoy are Dune, Project Hail Mary, and the Cradle series by Will Wight.",
+        "description": "I like to read, especially on the Kindle. Although I enjoy nonfiction, these days I mainly read sci-fi and fantasy stories. Some books/ series I enjoy are Dune, Project Hail Mary, the Three Body Problem trilogy, and the Cradle series by Will Wight.",
         "images": [
-          "images/portfolio/reading/p1.jpg"
+          "images/portfolio/reading/p1.jpg",
+          "images/portfolio/reading/three_body_problem.jpg",
+          "images/portfolio/reading/project_hail_mary.jpg",
+          "images/portfolio/reading/dune.jpg"
         ],
         "url": "",
         "technologies": []
